@@ -1,5 +1,18 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="my_cool_marquee_styles_!!!.css">
+
+	<script>
+
+		function marqueeReverse(input){
+			if(document.getElementById(input).direction !== "up"){
+				document.getElementById(input).direction = 'up';
+			}
+			else{
+				document.getElementById(input).direction = 'down';
+			}
+		}
+
+	</script>
 </head>
 
 <body>
@@ -13,6 +26,11 @@
 			</marquee>
 		</div>
 	</marquee>
+
+	<div id="attribute-mod">
+		<button onclick="marqueeReverse('test-marquee')">chdir</button>
+		<marquee direction ="down" height="350px" id="test-marquee">Test</marquee>
+	</div>
 	<!--<marquee height="100%" width="100%" direction="down"><div id="background">test</div></marquee>-->
 	<!--<marquee height="100%" width="100%" direction="down"><div id="background2">test</div></marquee>-->
 
