@@ -1,68 +1,77 @@
 <head>
-	<link rel="stylesheet" type="text/css" href="my_cool_marquee_styles_!!!.css">
+    <link rel="stylesheet" type="text/css" href="my_cool_marquee_styles_!!!.css">
+    <title><marquee>ghjka</marquee></title>
+    <script>
 
-	<script>
+        function marqueeReverse(input){
+            if(document.getElementById(input).direction !== "up"){
+                document.getElementById(input).direction = 'up';
+            }
+            else{
+                document.getElementById(input).direction = 'down';
+            }
+        }
 
-		function marqueeReverse(input){
-			if(document.getElementById(input).direction !== "up"){
-				document.getElementById(input).direction = 'up';
-			}
-			else{
-				document.getElementById(input).direction = 'down';
-			}
-		}
-
-	</script>
+    </script>
 </head>
 
 <body>
 
-	<marquee id="navigation" behavior="slide" scrollamount="30" direction="left">
-		Navigation
-		<div>
-			<marquee behavior="slide" direction="right">
-				<a href="http://marqueeclub.club/" target="_blank">Marquee Club</a>
-				<a href="http://cs.tru.ca/~tbellmore268w7/Week1/test.html" target="_blank">The Best Site Ever</a>
-			</marquee>
-		</div>
-	</marquee>
-
-	<div id="attribute-mod">
-		<button onclick="marqueeReverse('test-marquee')">chdir</button>
-		<marquee direction ="down" height="350px" id="test-marquee">Test</marquee>
-	</div>
-	<!--<marquee height="100%" width="100%" direction="down"><div id="background">test</div></marquee>-->
-	<!--<marquee height="100%" width="100%" direction="down"><div id="background2">test</div></marquee>-->
+<marquee behavior="alternate" direction="up" height="100%" scrollamount="50">
+    <marquee behavior="alternate" scrollamount="50">
+        <img src="Cat.gif" height="100px" width="100px">
+    </marquee>
+</marquee>
 
 
-	<marquee direction="down" width="100%" height="100%" behavior="alternate">
-	  <marquee behavior="alternate">
-	    Working on it!
-	  </marquee>
-	</marquee>
 
-	<marquee direction="down" width="20%" height="100%" id="down1">Marquees are very powerful!</marquee>
-	<marquee direction="up" width="20%" height="100%" id="up1">So cool!</marquee>
-	<marquee direction="right" width="100%" height="10%" id="bottomleft" scrollamount="10"><img src="mohd3.jpg"></marquee>
-	
-	<marquee behavior="alternate" scrollamount="100" id="WOW">
-		<marquee direction="up" behavior="alternate" height="100px" scrollamount="100">
-			WOW!!
-		</marquee>
-	</marquee>
 
-	<div id="marquee_throne">
-		<marquee direction="right">direction:"right"</marquee>
-		<marquee behavior="alternate" direction="left">behavior:alternate</marquee>
-		<marquee scrollamount="30">scrollamount</marquee>
-	</div>
-	
-	
+<marquee id="navigation" behavior="slide" scrollamount="30" direction="left">
+    Navigation
+    <div>
+        <marquee behavior="slide" direction="right">
+            <a href="http://marqueeclub.club/" target="_blank">Marquee Club</a>
+            <a href="http://cs.tru.ca/~tbellmore268w7/Week1/test.html" target="_blank">The Best Site Ever</a>
+        </marquee>
+
+    </div>
+</marquee>
+
+<div id="attribute-mod">
+    <button onclick="marqueeReverse('test-marquee')">chdir</button>
+    <marquee direction ="down" height="350px" id="test-marquee">Test</marquee>
+</div>
+<!--<marquee height="100%" width="100%" direction="down"><div id="background">test</div></marquee>-->
+<!--<marquee height="100%" width="100%" direction="down"><div id="background2">test</div></marquee>-->
+
+
+<marquee direction="down" width="100%" height="100%" behavior="alternate">
+    <marquee behavior="alternate">
+        Working on it!
+    </marquee>
+</marquee>
+
+<marquee direction="down" width="20%" height="100%" id="down1">Marquees are very powerful!</marquee>
+<marquee direction="up" width="20%" height="100%" id="up1">So cool!</marquee>
+<marquee direction="right" width="100%" height="10%" id="bottomleft" scrollamount="50"><img src="I am boss.jpg"></marquee>
+
+<marquee behavior="alternate" scrollamount="100" id="WOW">
+    <marquee direction="up" behavior="alternate" height="100px" scrollamount="100">
+        WOW!!
+    </marquee>
+</marquee>
+
+<div id="marquee_throne">
+    <marquee direction="right">direction:"right"</marquee>
+    <marquee behavior="alternate" direction="left">behavior:alternate</marquee>
+    <marquee scrollamount="30">scrollamount</marquee>
+</div>
+
 <marquee behavior="alternate" direction="up" height="100%" scrollamount="50">
     <marquee behavior="alternate" scrollamount="50">
         <iframe src="http://marqueeclub.club"></iframe>
     </marquee>
 </marquee>
-	
-	
+
+
 </body>
