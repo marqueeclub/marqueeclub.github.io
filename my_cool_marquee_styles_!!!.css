@@ -1,0 +1,59 @@
+body{
+	background-image: url("stars.gif");
+	background-repeat: repeat;
+}
+
+/*#background, #background2{
+	position: fixed;
+	background-image: url("stars.gif");
+	background-repeat: repeat;
+	width: 100vw;
+	height: 50%;
+	z-index: -1;
+	top: 0;
+}*/
+
+marquee{
+	color:red;
+	font-size: 20;
+}
+
+#down1{
+	position: absolute;
+	left: 0;
+	z-index: -1;
+}
+
+#up1{
+	position: absolute;
+	left: calc(100% - 100px);
+	top: 0;
+	z-index: -1;
+}
+
+#WOW{
+	position: absolute;
+	top: 0;
+}
+
+#bottomleft{
+	position: absolute;
+	bottom: 100px;
+	z-index: -1;
+}
+
+#bottomleft > img{
+	height: 150px;
+}
+
+#marquee_throne{
+	position: absolute;
+	color: red;
+	z-index: 2;
+
+	width: 500px;
+
+	left: calc(50% - 250px);
+	top: 50%;
+	/*background-color: blue;*/
+}
